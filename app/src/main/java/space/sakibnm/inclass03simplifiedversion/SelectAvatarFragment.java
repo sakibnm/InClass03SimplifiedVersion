@@ -17,7 +17,7 @@ public class SelectAvatarFragment extends Fragment {
 
     private int drawableID;
 
-    private InterfaceFromSelectAvatarToActivity fromSelectAvatarToActivity;
+    private InterfaceToInClass03Activity fromSelectAvatarToActivity;
 
     public SelectAvatarFragment() {
         // Required empty public constructor
@@ -40,6 +40,7 @@ public class SelectAvatarFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        getActivity().setTitle("Select Avatar");
         // Inflate the layout for this fragment
         View rootView =  inflater.inflate(R.layout.fragment_select_avatar, container, false);
         imageViewAvatar1 = rootView.findViewById(R.id.imageViewSelectAvatar1);
@@ -64,8 +65,8 @@ public class SelectAvatarFragment extends Fragment {
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
-        if(context instanceof InterfaceFromSelectAvatarToActivity){
-            fromSelectAvatarToActivity = (InterfaceFromSelectAvatarToActivity) context;
+        if(context instanceof InterfaceToInClass03Activity){
+            fromSelectAvatarToActivity = (InterfaceToInClass03Activity) context;
         }else{
             throw new RuntimeException(context.toString()+ "must implement InterfaceFromSelectAvatarToActivity");
         }

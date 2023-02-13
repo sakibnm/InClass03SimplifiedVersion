@@ -48,6 +48,7 @@ public class DisplayFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        getActivity().setTitle("Display Profile");
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_display, container, false);
         textViewDisplayName = rootView.findViewById(R.id.textViewDisplayName);

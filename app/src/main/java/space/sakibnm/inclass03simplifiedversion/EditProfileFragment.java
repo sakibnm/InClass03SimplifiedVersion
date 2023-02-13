@@ -28,7 +28,7 @@ public class EditProfileFragment extends Fragment{
     private ImageView imageViewAvatar;
     private Button buttonSubmit;
 
-    private InterfaceFromEditToActivity fromEditToActivity;
+    private InterfaceToInClass03Activity fromEditToActivity;
 
     public EditProfileFragment() {
         // Required empty public constructor
@@ -111,8 +111,8 @@ public class EditProfileFragment extends Fragment{
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
-        if(context instanceof InterfaceFromEditToActivity){
-            fromEditToActivity = (InterfaceFromEditToActivity) context;
+        if(context instanceof InterfaceToInClass03Activity){
+            fromEditToActivity = (InterfaceToInClass03Activity) context;
         }else {
             throw new RuntimeException(context.toString()+ "must implement InterfaceFromEditToActivity");
         }

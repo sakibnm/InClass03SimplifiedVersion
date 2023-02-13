@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.nfc.Tag;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity implements InterfaceFromEditToActivity, InterfaceFromSelectAvatarToActivity{
+public class MainActivity extends AppCompatActivity implements InterfaceToInClass03Activity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
